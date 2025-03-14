@@ -1,11 +1,9 @@
 const bombillo = document.querySelector('.prender');
 const imgbombillo = document.querySelector('.bombilla');
+let bandera = 0; // Se declara la variable globalmente
 
-function prender() {
-    console.log('Hola');
-    bandera = 0;
-    bombillo.addEventListener('click', prendeApaga);
-}
+// Agregar el evento directamente
+bombillo.addEventListener('click', prendeApaga);
 
 function prendeApaga() {
     if (bandera === 0) {
@@ -19,4 +17,3 @@ function prendeApaga() {
     }
 }
 
-prender();
